@@ -1,0 +1,42 @@
+{
+  "name": "html-help-desktop",
+  "productName": "HTML Help Desktop",
+  "version": "0.1.0",
+  "description": "HTML Help is now available in desktop mode. Made using Electron",
+  "main": "main.js",
+  "author": "Laksh Lilhare",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^8.0.2",
+    "electron-builder": "^22.3.2"
+  },
+  "build": {
+    "appId": "com.electron.app",
+    "win": {
+      "target": "portable"
+    },
+    "portable": {
+      "unicode": false,
+      "artifactName": "my_electron_app.exe"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LakshLilhare-in/htmlhelp-desktop.git"
+  },
+  "keywords": [
+    "Elegant",
+    "Fast",
+    "Easy-to-use"
+  ],
+  "license": "SEE LICENSE IN license",
+  "bugs": {
+    "url": "https://github.com/LakshLilhare-in/htmlhelp-desktop/issues"
+  },
+  
+  "homepage": "https://github.com/LakshLilhare-in/htmlhelp-desktop#readme"
+  
+}
