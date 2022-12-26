@@ -11,7 +11,7 @@
 //   const userAgent = navigator.userAgent.toLowerCase();
 //   return userAgent.indexOf(" electron/") > -1;
 // };
-
+console.clear()
 window.addEventListener("DOMContentLoaded", () => {
   const menuButton = document.getElementById("menu-btn");
   const minimizeButton = document.getElementById("minimize-btn");

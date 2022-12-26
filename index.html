@@ -1,85 +1,149 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    
-    <title>HTML Helpers</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="styles.css">
-    <!-- <link rel="stylesheet" href="./Bootstrap/bootstrap.css"> -->
-    <!-- <script src="./Bootstrap/bootstrap.js"></script> -->
-    <link rel="stylesheet" href="./Prism/prism.css">
-    <script src="./Prism/prism.js"></script>
-    <script src="https://kit.fontawesome.com/1c9144b004.js" crossorigin="anonymous"></script>
-    </head>
-  </head>
-  <body>
-    <div id="menu-bar" style="position: fixed; top:0; width: 100%; z-index: 99999; " >
-      <div class="left" role="menu">
-        <button class="menubar-btn" id="menu-btn"><i class="fas fa-bars"></i></button>
-        <h5 title="menu">HTML Help Desktop 0.1.0</h5>
+
+<head>
+  <meta charset="UTF-8" />
+
+  <title>HTML Helpers</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="./Prism/prism.css">
+  <script src="./Prism/prism.js"></script>
+  <link href="https://fonts.cdnfonts.com/css/cascadia-code" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  <script src="https://kit.fontawesome.com/1c9144b004.js" crossorigin="anonymous"></script>
+</head>
+</head>
+
+<body class="text-white">
+  <div id="menu-bar" style="position: fixed; top:0; width: 100%; z-index: 99999; ">
+    <div class="left" role="menu">
+      <button class="menubar-btn" id="menu-btn"><i class="fas fa-bars"></i></button>
+      <h5 title="menu">HTML Help Desktop 2.0</h5>
+    </div>
+    <div class="right">
+      <button class="menubar-btn " name="iconic" id="minimize-btn"><i class="fas fa-window-minimize"></i></button>
+      <button class="menubar-btn " name="iconic" id="max-unmax-btn"><i class="far fa-square"></i></button>
+      <button class="menubar-btn " name="iconic" id="close-btn"><i class="fas fa-times"></i></button>
+    </div>
+  </div>
+  <section class="pt-11 ">
+    <header class="body-font">
+      <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 linky p-5 rounded-full" href="index.html">Home</a>
+        <a class="mr-5 linky p-5 rounded-full " href="./version.html">About</a>
+      </nav>
+
       </div>
-      <div class="right">
-        <button class="menubar-btn" id="minimize-btn"><i class="fas fa-window-minimize"></i></button>
-        <button class="menubar-btn" id="max-unmax-btn"><i class="far fa-square"></i></button>
-        <button class="menubar-btn" id="close-btn"><i class="fas fa-times"></i></button>
+    </header>
+    <div class="line"></div>
+    <div class="suggestion suggestion-color">
+      <div>
+        <h1 class="heading">Colors</h3>
+          <h1 class="heading">Color Picker</h2>
+            <p style="margin:2rem;">Color picker might not be available without internet.</p>
+            <iframe src="https://vigilant-octo-spoon-3czyn6ttj-lakshlilhare-in.vercel.app/" style="
+        width: 37rem;
+        height: 21rem;
+        font-family: 'Cascadia Code', sans-serif !important;
+        overflow:hidden !important;
+    margin-left:3rem;" frameborder="0"></iframe>
+            <div style="margin:3rem">
+              <h1 class="heading">Color Palettes</h1>
+              <!-- Coolors Palette Widget -->
+              <script src="https://coolors.co/palette-widget/widget.js"></script>
+              <script
+                data-id="01568623627147323">new CoolorsPaletteWidget("01568623627147323", ["5bc0eb", "acd49c", "fde74c", "9bc53d", "c3423f", "404e4d", "515e5d", "f7fffe"]); </script>
+              <!-- Coolors Palette Widget -->
+              <script src="https://coolors.co/palette-widget/widget.js"></script>
+              <script
+                data-id="09849522148363437">new CoolorsPaletteWidget("09849522148363437", ["d8cbc7", "cc3f0c", "9a6d38", "33673b", "19231a"]); </script>
+              <!-- Coolors Palette Widget -->
+              <script src="https://coolors.co/palette-widget/widget.js"></script>
+              <script
+                data-id="020410645630453006">new CoolorsPaletteWidget("020410645630453006", ["524948", "57467b", "7cb4b8", "70f8ba", "cafe48"]); </script>
+              <script src="https://coolors.co/palette-widget/widget.js"></script>
+              <script
+                data-id="05138316459851076">new CoolorsPaletteWidget("05138316459851076", ["2d3047", "376760", "419d78", "91a168", "e0a458", "ffdbb5", "e093b9", "c04abc"]); </script>
+            </div>
       </div>
     </div>
-    <section>
-      <h3 class="dvrshd">Development Resources</h3>
-      <div class="sugestion" id="fon">
-          <h3>FONTS</h3>
-          <h5>Popins</h5>
-          <pre class="language-css code">
-              <code class="language-css">
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
-              
-  * {
-  font-family:'Open Sans', sans-serif;</h5>
- }
-          </code>  
-          </pre>          
-               <h5>Montserrat</h5>
-               <pre class="language-css code">
-                   <code class="language-css">
+    <div class="suggestion suggestion-entities" style="margin: 3rem;">
+      <h1 class="heading">Entities</h1>
+      <ol type="1">
+        <li>
+          <h3>1. &nbsp; Non breaking space - &#38;nbsp; </h3>
+        </li>
+        <li>
+          <h3>2. &nbsp;&lt;; Less than - &#38;lt; </h3>
+        </li>
+        <li>
+          <h3>3. &nbsp;&gt; Greater than - &#38;gt; </h3>
+        </li>
+        <li>
+          <h3>4. &nbsp;&amp; Ampersand - &#38;amp; </h3>
+        </li>
+        <li>
+          <h3>5. &nbsp;&copy; Copyright - &#38;copy; </h3>
+        </li>
+        <li>
+          <h3>6. &nbsp;&reg; Registered Trademark - &#38;reg; </h3>
+        </li>
+      </ol>
+    </div>
+    <div class="suggestion suggestion-fonts">
+    <h1 class="heading">Fonts</h1>
+    <div class="font1">
+      <h1 class="heading2">Montserrat</h1>
+      <pre class="language-css code" style="width:76rem; margin:auto;">
+        <code >
   @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-   * {  
-    font-family:'Montserrat' , sans-serif;
-  }
-                   </code>
-               </pre>
-           </div>
-      </div>
-      <div class="sugestion" id="col">
-          <h3>Colors</h3>
-        <!-- Coolors Palette Widget -->
-      <script src="https://coolors.co/palette-widget/widget.js"></script>
-      <script data-id="007497344688616336">new CoolorsPaletteWidget("007497344688616336", ["191716","e6af2e","ce9d3b","b68c49","9e7a56","856963","6d5770","55467e","3d348b","beb7a4"]); </script>
-      </div>
-      <h3 class="dvrshd">Entities</h3>
-      <div class="sugestion" id="ent">
-       <h3>non-breaking space	(nbsp)(160)</h3>
-       <h3>¡	inverted exclamation mark	(iexcl)	(161);</h3>
-       <h3>¤	currency	(curren)(164)</h3>
-      <h3> ¢	cent	(cent)(162)</h3>
-      <h3> £	pound	(pound)(163)</h3>
-       <h3>¥	yen	(yen)(165)  </h3>
-      </div>
-      <div class="sugestion" id="doe">
-          <h1>Download other used frameworks</h1>
-          <a name="" id="" class="btn btn-primary" href="./Downloads/Bootstrap.zip" role="button">Download Bootstrap</a>
-          <a name="" id="" class="btn btn-primary" href="./Downloads/Prism.zip" role="button">Download Prism</a>
+          
+   * {
+     font-family: 'Montserrat', sans-serif;
+   }</code>
+        </pre>
+    </div>
+    <div class="font2">
+      <h3 class="heading2">Poppins</h3>
+      <pre class="language-css code" style="width:76rem; margin:auto;">
+          <code >
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+          
+  * {
+    font-family: 'Poppins', sans-serif;
+  }</code>
+      </pre>
+    </div>
+    <div class="font3">
+      <h3 class="heading2">Cascadia Code</h3>
+      <pre class="language-css code" style="width:76rem; margin:auto;">
+        <code >
+          @import url('https://fonts.cdnfonts.com/css/cascadia-code');
         
-        
-        </div>
-      </section>
-      <div class="sugestion" >
+  * {
+    font-family: 'Cascadia Code', sans-serif;
+  }</code>
+    </pre>
+    </div>
+    </div>
+    <div class="suggestion suggestion-downloads">
+      <h1 class="heading">Resource Downloads</h1>
+      <h3 class="heading2">Bootstrap</h3>
+      <a href="./Downloads/Bootstrap.zip" class="btn" style="margin-top: 3rem !important; margin-left: 3rem !important;">Download Bootstrap v5.2.3 </a>
+      <h3 class="heading2">Prism</h3>
+      <a href="./Downloads/Prism.zip" class="btn" style="margin-top: 3rem !important; margin-left: 3rem !important;">Download Prism v1.25.0</a>
+      <h3 class="heading2">Tailwind CSS</h3>
+      <a href="./Downloads/tailwind.zip" class="btn" style="margin-top: 3rem !important; margin-left: 3rem !important;">Download Tailwind CSS v2.2.19</a>
+      
+    </div>
 
-        <h5 style="color: rgb(58, 54, 54); padding-left: 3.5rem;">Version 0.1.0</h6>
-          <h5 style="color:rgb(58, 54, 54); padding-left: 3.5rem;">Copyright (C) HTML Helpers 2023-2024 All rights reserved.</h4>
-          </div>
-    <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
-  </body>
+  </section>
+  
+
+  <!-- You can also require other files to run in this process -->
+  <script src="./renderer.js"></script>
+</body>
+
 </html>
